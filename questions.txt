@@ -1,0 +1,6 @@
+1. How to run react project ona different port 
+    step1 : create .env file 
+    step2 : PORT=NEW_PORT_NUMBER
+
+2. How to use multiple html files in react app
+
