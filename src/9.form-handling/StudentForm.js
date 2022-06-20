@@ -32,7 +32,7 @@ class StudentForm extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <h1>Student Form</h1>
         <form>
             <div>

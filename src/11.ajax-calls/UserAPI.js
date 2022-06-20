@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
 class UserAPI extends Component {
     constructor(){
@@ -10,13 +11,16 @@ class UserAPI extends Component {
     }
 
     componentDidMount(){
-        fetch("https://jsonplaceholder.typicode.com/users")
-        .then(response => response.json())
-        .then(data => this.setState({users: data}))
+        // fetch("https://jsonplaceholder.typicode.com/users")
+        // .then(response => response.json())
+        // .then(data => this.setState({users: data}))
+
+        axios("https://jsonplaceholder.typicode.com/users")
+        .then(response => this.setState({users: response.data}))
     }
   render() {
     return (
-      <React.Fragment>
+      <div className="container">
         <h1>User API Info</h1>
         <table className="table">
             <thead>
@@ -50,7 +54,7 @@ class UserAPI extends Component {
                 }
             </tbody>
         </table>
-      </React.Fragment>
+      </div>
     )
   }
 }

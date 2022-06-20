@@ -7,7 +7,15 @@ import { WelcomeOne } from "./1.components/2.class/WelcomeOne";
 import LifeCycleA from "./10.life-cycle/LifeCycleA";
 import CommentsAPI from "./11.ajax-calls/CommentsAPI";
 import PostAPI from "./11.ajax-calls/PostAPI";
+import StudentMongoAPI from "./11.ajax-calls/StudentMongoAPI";
+import StudentSQLAPI from "./11.ajax-calls/StudentSQLAPI";
 import UserAPI from "./11.ajax-calls/UserAPI";
+import Routing from "./12.routing/Routing";
+import ClassCounter from "./13.react-hooks/ClassCounter";
+import HookCounter from "./13.react-hooks/HookCounter";
+import HookWithObject from "./13.react-hooks/HookWithObject";
+import UseEffectHook from "./13.react-hooks/UseEffectHook";
+import UseRefHook from "./13.react-hooks/UseRefHook";
 import Hello from "./2.jsx/Hello";
 import HelloOne from "./2.jsx/HelloOne";
 import Greeting from "./3.props/Greeting";
@@ -41,7 +49,15 @@ function App() {
   }
   return (
     <div className="container">
-      <UserAPI />
+      <UseRefHook />
+      {/* <UseEffectHook /> */}
+      {/* <HookWithObject /> */}
+      {/* <HookCounter /> */}
+      {/* <ClassCounter /> */}
+      {/* <Routing /> */}
+      {/* <StudentMongoAPI /> */}
+      {/* <StudentSQLAPI /> */}
+      {/* <UserAPI /> */}
       {/* <CommentsAPI /> */}
       {/* <PostAPI /> */}
       {/* <LifeCycleA /> */}
